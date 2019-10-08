@@ -38,7 +38,7 @@ function has_children() {
 // customize excertp word count length
 function custom_excerpt_length_count() {
     
-    return 25;
+    return 50;
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length_count');
@@ -63,3 +63,17 @@ function learningWordpress_setup() {
 }
 
 add_action('after_setup_theme', 'learningWordpress_setup');
+
+// Add Our Widget Locations
+function ourWidgetsInit() {
+    
+    register_sidebar( array(
+        
+        'name' => 'Sidebar',
+        'id' => 'sidebar1'
+        
+    ));
+    
+}
+
+add_action('widgets_init', 'ourWidgetsInit');

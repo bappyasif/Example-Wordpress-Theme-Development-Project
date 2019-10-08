@@ -95,6 +95,7 @@ article.post-gallery h2 {
 .site-footer {
     margin-top: 30px;
     border-top: 2px solid #999;
+    font-size: 84%;
 }
 
 /* Navigation Styling */
@@ -139,8 +140,21 @@ article.post-gallery h2 {
 .site-header nav ul li.current-menu-item a:visited,
 .site-header nav ul li.current-page-ancestor a:link,
 .site-header nav ul li.current-page-ancestor a:visited {
+    font-weight: bold;
     background-color: #006ec3;
     color: #FFF;
+}
+
+/* Main Collumn */
+.main-collumn {
+    width: 66%;
+    float: left;
+}
+
+/* Side Collumn */
+.secondary-collumn {
+    width: 30%;
+    float: right;
 }
 
 /* Site Footer Menu Styling */

@@ -22,14 +22,9 @@ get_header(); ?>
             endif; ?>
 
         </div> <!-- /main-collumn -->
-
-        <!-- Sidebar Collumn -->
-        <div class="secondary-collumn">
-
-            <p>This is a Sidebar.</p>
-            <?php dynamic_sidebar('sidebar1'); ?>
-
-        </div> <!-- /sidebar-collumn -->
+        
+        <!-- Calling Sidebar -->
+        <?php get_sidebar(); ?>
 
     </div>
 

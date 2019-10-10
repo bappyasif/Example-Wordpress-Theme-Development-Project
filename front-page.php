@@ -4,15 +4,15 @@ get_header(); ?>
 
     <!-- site-content -->
     <div class="site-content clearfix">
+        
+        <h3>Custom HTML Goes Here</h3>
 
-        <!-- main-collumn -->
-        <div class="main-collumn">
-
-            <?php if (have_posts()):
-
+        <?php if (have_posts()):
+        
             while (have_posts()) : the_post();
 
-            get_template_part('content', 'page');
+            the_content();
+            /*get_template_part('content', get_post_format());*/
 
             endwhile;
 
@@ -20,11 +20,8 @@ get_header(); ?>
                 echo '<p>No Contents Been Found</p>';
 
             endif; ?>
-
-        </div> <!-- /main-collumn -->
         
-        <!-- Calling Sidebar -->
-        <?php get_sidebar(); ?>
+        <h3>Custom HTML Goes Here</h3>
 
     </div>
 

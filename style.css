@@ -97,6 +97,7 @@ article.post-gallery h2 {
     margin-top: 30px;
     border-top: 2px solid #999;
     font-size: 84%;
+    float: left;
 }
 
 /* Navigation Styling */
@@ -161,7 +162,7 @@ article.post-gallery h2 {
 /* Footer Widget Area Styling */
 .footer-widget-area {
     width: 25%;
-    float: left;
+    float: right;
     padding-left: 40px;
     box-sizing: border-box;
 }
@@ -169,9 +170,10 @@ article.post-gallery h2 {
 /* Site Footer Menu Styling */
 .site-footer nav {
 	margin: 30px 0 10px 0;
+    /*float: left;*/
 }
 
-.site-footer nav ul li {
+.site-footer site-nav ul li {
 	margin-right: 10px;
 	padding-right: 10px;
 	border-right: 1px solid #DDD;

@@ -6,7 +6,7 @@ if (have_posts()) :
 
 	while (have_posts()) : the_post(); ?>
 
-        <article class="post page">
+        <article class="post">
             <! -- Collumn Container-->
             <div class="collumn-continer clearfix">
                 

@@ -162,7 +162,7 @@ article.post-gallery h2 {
 /* Footer Widget Area Styling */
 .footer-widget-area {
     width: 25%;
-    float: right;
+    float: left;
     padding-left: 40px;
     box-sizing: border-box;
 }
@@ -173,7 +173,7 @@ article.post-gallery h2 {
     /*float: left;*/
 }
 
-.site-footer site-nav ul li {
+.site-footer nav ul li {
 	margin-right: 10px;
 	padding-right: 10px;
 	border-right: 1px solid #DDD;
@@ -313,4 +313,19 @@ div.hd-search #searchsubmit {
 div.hd-search #s {
     vertical-align: top;
     padding: 3px 0;
+}
+
+/* Front Page Post Columns */
+.home-columns {
+    padding-top: 30px;
+}
+
+.one-half {
+    width: 45%;
+    float: left;
+    margin-right: 10%;
+}
+
+.last {
+    margin-right: 0;
 }

@@ -1,19 +1,15 @@
     <footer class="site-footer">
         
-        <!-- Site Navigation For Footer -->
-        <nav class="site-nav">
-                
-            <?php
-                
-            $args = array(
-                'theme_location' => 'footer'
-                );
-            ?>
+        <div class="footer-callout clearfix">
+            <div class="footer-callout-image">
+            </div>
             
-            <?php wp_nav_menu( $args ); ?>
-            
-            </nav>
-        
+            <div class="footer-callout-text">
+                <!--<h2>Customize Heading</h2> -->
+                <h2><?php echo get_theme_mod('lwp-footer-callout-headline'); ?></h2>
+                <p>Dummmy Text Dummmy Text</p>
+            </div>
+        </div>        
         
         <!-- footer-widgets div tag with a clearfix-->
         <div class="footer-widgets clearfix">
@@ -63,6 +59,21 @@
             <?php endif; ?>
             
         </div>
+        
+        <!-- Site Navigation For Footer -->
+        <nav class="site-nav">
+                
+            <?php
+                
+            $args = array(
+                'theme_location' => 'footer'
+                );
+            ?>
+            
+            <?php wp_nav_menu( $args ); ?>
+            
+            </nav>
+
 
         <p> <b><?php bloginfo('name'); ?> -&copy; <?php echo date('Y'); ?> </b> </p>
 

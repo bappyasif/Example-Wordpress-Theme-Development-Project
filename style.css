@@ -338,12 +338,14 @@ div.hd-search #s {
 }
 
 .footer-callout-image {
-    /*float: left;*/
+    display: block
+    float: left;
     width: 30%;
 }
 
 .footer-callout-text {
-    /*float: right;*/
+    display: block
+    float: right;
     width: 67%;
 }
 

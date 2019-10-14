@@ -186,18 +186,72 @@ add_action('wp_head', 'learnigWordpress_customize_css');
 
 // Add Footer Callout Section To Admin Appearnce Cutomizee Screen
 function lwp_footer_callout($wp_customize) {
+    
+    // Footer Headline Callout Section
     $wp_customize->add_section('lwp-footer-callout-section', array(
         'title' => 'Footer Callout'
     ));
     
+    // Footer Display Callout Setting
+    $wp_customize->add_setting('lwp-footer-callout-display', array(
+        'default' => 'No'
+    ));
+    
+    // Footer Display Callout Control
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'lwp-footer-callout-display-control', array(
+        'label' => 'Display This Section ??',
+        'section' => 'lwp-footer-callout-section',
+        'settings' => 'lwp-footer-callout-display',
+        'type' => 'select',
+        'choices' => array('No' => 'No', 'Yes' => 'Yes')
+    )));
+    
+    // Footer Headline Callout Setting
     $wp_customize->add_setting('lwp-footer-callout-headline', array(
         'default' => 'Example Headline Text Here'
     ));
     
+    // Footer Headline Callout Control
     $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'lwp-footer-callout-headline-control', array(
         'label' => 'Headline',
         'section' => 'lwp-footer-callout-section',
         'settings' => 'lwp-footer-callout-headline'
+    )));
+    
+    // Footer Paragraph Callout Setting
+    $wp_customize->add_setting('lwp-footer-callout-text', array(
+        'default' => 'Example Paragraph Text Here'
+    ));
+    
+    // Footer Paragraph Callout Control
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'lwp-footer-callout-text-control', array(
+        'label' => 'Text',
+        'section' => 'lwp-footer-callout-section',
+        'settings' => 'lwp-footer-callout-text',
+        'type' => 'textarea'
+    )));
+    
+    // Footer Link Callout Setting
+    $wp_customize->add_setting('lwp-footer-callout-link');
+    
+    // Footer Link Callout Control
+    $wp_customize->add_control(new WP_Customize_Control($wp_customize, 'lwp-footer-callout-link-control', array(
+        'label' => 'Link',
+        'section' => 'lwp-footer-callout-section',
+        'settings' => 'lwp-footer-callout-link',
+        'type' => 'dropdown-pages'
+    )));
+    
+    // Footer Image Callout Setting
+    $wp_customize->add_setting('lwp-footer-callout-image');
+    
+    // Footer Image Callout Control
+    $wp_customize->add_control(new WP_Customize_Cropped_Image_Control($wp_customize, 'lwp-footer-callout-image-control', array(
+        'label' => 'Image',
+        'section' => 'lwp-footer-callout-section',
+        'settings' => 'lwp-footer-callout-image',
+        'width' => 750,
+        'height' => 500
     )));
 }
 

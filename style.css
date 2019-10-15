@@ -357,3 +357,39 @@ div.hd-search #s {
 .footer-callout-text p {
     font-size: .9rem;
 }
+
+/* About Aithor */
+.about-author {
+    background-color: #EDEDED;
+    padding: 20px;
+}
+
+.about-author-image {
+    float: left;
+    width: 28%;
+    position: relative;
+}
+
+.about-author-image img {
+    display: block;
+}
+
+.abpout-author-image p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 4px 0;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .85);
+    color: #FFF;
+    margin: 0;
+    
+}
+
+.about-author-text {
+    float: right;
+    width: 68%;
+}

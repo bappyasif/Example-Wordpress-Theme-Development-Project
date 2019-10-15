@@ -37,13 +37,11 @@ if (have_posts()):
 
     </p>
         
-    <?php the_post_thumbnail('banner-image'); ?>
+    <?php the_post_thumbnail('banner-image'); 
         
-        get_template_part('content, get_post_format());
+        get_template_part('content', get_post_format()); ?>
 
-    ///*<!--<?php the_content(); ?> -->*/
-        
-
+    <!--<?php the_content(); ?> -->
 
     </article>
     

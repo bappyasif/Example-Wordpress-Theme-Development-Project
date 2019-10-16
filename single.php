@@ -39,8 +39,8 @@ if (have_posts()):
         
     <?php the_post_thumbnail('banner-image'); 
         
-        get_template_part('content', get_post_format()); ?>
-
+    get_template_part('content', get_post_format()); ?>
+        
     <!--<?php the_content(); ?> -->
 
     </article>

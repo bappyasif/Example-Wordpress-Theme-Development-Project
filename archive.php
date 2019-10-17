@@ -54,12 +54,19 @@ if (have_posts()):
     get_template_part('content', get_post_format());
     
     endwhile;
+
+    // Wordpress Pagination
+    echo paginate_links();
+    //Calling Sidebar -->
+    get_sidebar();
     
     else:
     
         echo '<p> No Contents Been Found </p>';
         
     endif;
+
+    
 
 get_footer();
 

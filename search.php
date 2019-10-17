@@ -12,6 +12,9 @@ if (have_posts()): ?>
     get_template_part('content', get_post_format());
     
     endwhile;
+
+    // Wordpress Pagination
+    paginate_links();
     
     else:
         echo '<p>No Contents Been Found</p>';

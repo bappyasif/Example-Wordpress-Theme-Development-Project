@@ -15,6 +15,14 @@ get_header(); ?>
             get_template_part('content', get_post_format());
 
             endwhile;
+            
+            //echo "hello";
+            // Individual Pagination
+            //previous_posts_link();
+            //next_posts_link();
+            
+            // Wordpress Pagination
+            echo paginate_links();
 
             else:
                 echo '<p>No Contents Been Found</p>';

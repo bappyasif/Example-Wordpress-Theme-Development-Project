@@ -3,6 +3,7 @@
 function learningWordpress_resources() {
     
     wp_enqueue_style('style', get_stylesheet_uri());
+    wp_enqueue_script('main_js', get_template_directory_uri() . '/js/main.js', NULL, 1.0, true);
     
 }
 

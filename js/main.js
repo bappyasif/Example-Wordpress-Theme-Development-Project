@@ -60,8 +60,8 @@ if (quickAddButton) {
     quickAddButton.addEventListener("click", function() {
         
         var ourPostData = {
-            "title": document.querySelector(".admin-quick-add [name='title']").nodeValue,
-            "content": document.querySelector(".admin-quick-add [name='content']").nodeValue,
+            "title": document.querySelector(".admin-quick-add [name='title']").value,
+            "content": document.querySelector(".admin-quick-add [name='content']").value,
             "status": "publish"
         }
         
